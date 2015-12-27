@@ -1,3 +1,6 @@
+#ifndef _IMAGE_H_
+#define _IMAGE_H_
+
 /**
  * @file image.h
  * @brief This is the class header file for apImage
@@ -46,3 +49,4 @@ private:
 	unsigned char* pixels_; // Image data
 };
 
+#endif // _IMAGE_H_
