@@ -110,7 +110,7 @@ private:
 			// Allocate additional bytes to guarantee alignment
 			// Then align and cast to our desired data type.
 			this->pRaw_ = new char[sizeof(T) * this->size_ + (this->align_ - 1)];
-			this->pData_ = alignPointer(this->pRaw_);
+			this->pData_ = this->alignPointer(this->pRaw_);
 		}
 	}
 	// Allocate our memory for size_ elements of type T with the
